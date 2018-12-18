@@ -40,7 +40,7 @@ readonly G_VARISCITE_PATH="${DEF_BUILDENV}/variscite"
 
 ## LINUX kernel: git, config, paths and etc
 readonly G_LINUX_KERNEL_SRC_DIR="${DEF_SRC_DIR}/kernel"
-readonly G_LINUX_KERNEL_GIT="https://github.com/varigit/linux-imx.git"
+readonly G_LINUX_KERNEL_GIT="https://github.com/rudy-stamanne/linux-imx.git"
 readonly G_LINUX_KERNEL_BRANCH="imx_4.9.88_2.0.0_ga-var01"
 readonly G_LINUX_KERNEL_REV="aaecf096161795f49734bc717998df33475cbeb9"
 readonly G_LINUX_KERNEL_DEF_CONFIG='imx_v7_var_defconfig'
@@ -48,7 +48,7 @@ readonly G_LINUX_DTB='imx6ul-var-dart-emmc_wifi.dtb imx6ul-var-dart-nand_wifi.dt
 
 ## uboot
 readonly G_UBOOT_SRC_DIR="${DEF_SRC_DIR}/uboot"
-readonly G_UBOOT_GIT="https://github.com/varigit/uboot-imx.git"
+readonly G_UBOOT_GIT="https://github.com/rudy-stamanne/uboot-imx.git"
 readonly G_UBOOT_BRANCH="imx_v2017.03_4.9.11_1.0.0_ga_var01"
 readonly G_UBOOT_REV="820ecdae65fc3f22a9d5a45c2a272c5c5d823ee5"
 readonly G_UBOOT_DEF_CONFIG_MMC='mx6ul_var_dart_mmc_defconfig'
@@ -60,7 +60,7 @@ readonly G_SPL_NAME_FOR_NAND='SPL.nand'
 
 ## Broadcom BT/WIFI firmware ##
 readonly G_BCM_FW_SRC_DIR="${DEF_SRC_DIR}/bcmfw"
-readonly G_BCM_FW_GIT="git://github.com/varigit/bcm_4343w_fw.git"
+readonly G_BCM_FW_GIT="git://github.com/rudy-stamanne/bcm_4343w_fw.git"
 readonly G_BCM_FW_GIT_BRANCH="3.5.5.18"
 readonly G_BCM_FW_GIT_REV="423be46b06b5629e45a4943f98a3053c819091ce"
 
