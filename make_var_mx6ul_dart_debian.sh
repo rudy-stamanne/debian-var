@@ -76,7 +76,7 @@ readonly G_CROSS_COMPILER_JOPTION="-j 4"
 readonly G_EXT_CROSS_COMPILER_LINK="http://releases.linaro.org/components/toolchain/binaries/6.3-2017.05/arm-linux-gnueabihf/${G_CROSS_COMPILER_ARCHIVE}"
 
 ############## user rootfs packages ##########
-readonly G_USER_PACKAGES=""
+readonly G_USER_PACKAGES="openjdk-8-jre mariadb-server-10.1 mariadb-client-10.1"
 
 #### Input params #####
 PARAM_DEB_LOCAL_MIRROR="${DEF_DEBIAN_MIRROR}"
@@ -363,9 +363,9 @@ protected_install dosfstools
 sed -i -e 's/#PermitRootLogin.*/PermitRootLogin\tyes/g' /etc/ssh/sshd_config
 
 # enable graphical desktop
-protected_install xorg
-protected_install xfce4
-protected_install xfce4-goodies
+##RS### protected_install xorg
+##RS### protected_install xfce4
+##RS### protected_install xfce4-goodies
 
 # sound mixer & volume
 # xfce-mixer is not part of Stretch since the stable versionit depends on
@@ -382,8 +382,8 @@ protected_install network-manager-gnome
 protected_install net-tools
 
 ## fix lightdm config (added autologin x_user) ##
-sed -i -e 's/\#autologin-user=/autologin-user=x_user/g' /etc/lightdm/lightdm.conf
-sed -i -e 's/\#autologin-user-timeout=0/autologin-user-timeout=0/g' /etc/lightdm/lightdm.conf
+##RS### sed -i -e 's/\#autologin-user=/autologin-user=x_user/g' /etc/lightdm/lightdm.conf
+##RS### sed -i -e 's/\#autologin-user-timeout=0/autologin-user-timeout=0/g' /etc/lightdm/lightdm.conf
 
 # added alsa & alsa utilites
 protected_install alsa-utils
