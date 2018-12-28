@@ -7,7 +7,7 @@
 BOOTLOAD_RESERVE=4
 BOOT_ROM_SIZE=8
 SPARE_SIZE=0
-DTB_FILES='imx6ul-var-dart-emmc_wifi.dtb imx6ull-var-dart-emmc_wifi.dtb imx6ul-var-dart-5g-emmc_wifi.dtb imx6ull-var-dart-5g-emmc_wifi.dtb'
+DTB_FILES='imx6ull-var-dart-sd_emmc.dtb imx6ul-var-dart-emmc_wifi.dtb imx6ull-var-dart-emmc_wifi.dtb imx6ul-var-dart-5g-emmc_wifi.dtb imx6ull-var-dart-5g-emmc_wifi.dtb'
 
 echo "================================"
 echo " Variscite i.MX6 UltraLite DART"
